@@ -10,7 +10,7 @@ def fetch_animal_counts():
     next_page = URL
 
     while next_page:
-        # Загружаем HTML-страницу, прежде убедившись, что код запроса был 200
+        # Загружаю HTML-страницу, прежде убедившись, что код запроса был 200
         response = requests.get(next_page)
         if response.status_code != 200:
             print(f"Ошибка при загрузке страницы: {response.status_code}")
